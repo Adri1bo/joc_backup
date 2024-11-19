@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=RocknRoll+One&display=swap');
+body{
+    background-color: transparent;
+}
+#login_container{
+    background: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
+    border-radius: 36px;
+    width: 900px;
+    margin: auto;
+    padding: 0;
+}
+#login_container_col2{
+    background-color: rgba(238, 237, 243, 0.5);
+    border-top-right-radius: 36px;
+    border-bottom-right-radius: 36px;
+    padding: 32px;
+}
+.container__col1__littleTitle,
+.container__col1__bigTitle{
+    color: #413354;
+    font-family: 'RocknRoll One', sans-serif;
+    text-align: center;
+}
+.container__col1__littleTitle{
+    font-size: 3.6rem;
+    margin-bottom: 0;
+    
+}
+.container__col1__bigTitle{
+    font-size: 5.5rem;
+    line-height: 1.1;
+}
+
+#login_container_imgDiv{
+    display: flex;
+    align-content: center;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+#login_container_imgDiv_img{
+    margin: auto;
+    height: 124px;
+}
+
+#login_form_input_nameGame,
+#login_form_input_namePlayer,
+#login_form_input_password,
+#login_form_submitButton{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#login_form_submitButton{
+    background-color: #5E4D6F;
+    border-color: #5E4D6F;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#login_form_submitButton:hover{
+    background-color: transparent;
+    border-color: #5E4D6F;
+    color: #5E4D6F;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#login_form_submitButton:active{
+    background-color: #5E4D6F;
+    border-color: #5E4D6F;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+

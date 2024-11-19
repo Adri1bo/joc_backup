@@ -1,0 +1,7 @@
+pandas
+openpyxl
+streamlit-autorefresh
+pyairtable
+scipy
+numpy
+plotly

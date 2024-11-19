@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=RocknRoll+One&display=swap');
+
+:root{
+    --primary-color-dark-purple: #413354;
+    --secondary-color-light-purple: #7070B9;
+    --tertiary-color-lighter-purple: #868BC7;
+    --primary-color-blue: #5E74BD;
+    --secondary-color-blue: #415082;
+    --body-color: #FFFFFF;
+    --title-color: #413354;
+    --body-font-color1: #FFFFFF; 
+    --body-font-color1: #413354; 
+}
+
+body{
+    background-color: transparent;
+}
+#customSidebar__main{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding:32px;
+    border-radius: 25px;
+    width: fit-content;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+#customSidebar__row1,
+#customSidebar__row2,
+#customSidebar__row3
+{
+    padding-bottom: 16px;
+    border-bottom: 1px solid #413354;
+}
+
+#customSidebar__row2,
+#customSidebar__row3,
+#customSidebar__row4
+{
+    margin-top: 16px;
+}
+
+
+#customSidebar__row__col1__smallTitle{
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+#customSidebar__row__col1__bigTitle{
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    line-height: 24px;
+}
+
+#customSidebar__row2__col1__divImg{
+    width: 95px;
+    height: 95px;
+    background-color: white;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    margin:auto;
+}
+
+#customSidebar__row2__col1__divImg img{
+    width: 80px;
+    margin: auto;
+}
+
+#customSidebar__row2__col2 p{
+    margin-top:8px;
+    margin-bottom: 0;
+}
+
+#customSidebar__row3__card{
+    background-color: var(--primary-color-blue);
+    color: white;
+    border: none;
+    padding: 16px;
+    gap: 8px;
+}
+
+#customSidebar__row4{
+    gap: 8px;
+}
+
+.customSidebar__customButton{
+    color: white;
+    background-color: var(--primary-color-blue);
+    border-color: var(--primary-color-blue);
+    line-height: 2.4;
+    border-radius: 8px;
+}
+.customSidebar__customButton:hover{
+    background-color: var(--secondary-color-blue);
+    border-color: var(--secondary-color-blue);
+    cursor: pointer;
+}
+
+#customSidebar__city{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#customCard__chartSalut .card-header,
+#customCard__chartEconomia .card-header,
+#customCard__chartNecessitats .card-header,
+#customCard__chartAliments .card-header{
+    color: #545454;
+}
+
+#customCard__chartSalut .fa-heart-pulse,
+#customCard__chartEconomia .fa-piggy-bank,
+#customCard__chartNecessitats .fa-list-check,
+#customCard__chartAliments .fa-utensils{
+    padding-right: 4px;
+}
+
+#containerModal{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    /*opacity: 0.9;
+    background: #222;*/
+    z-index: 40000;
+    top:0;
+    left: 0;
+    overflow: hidden;
+    animation-name: fadeIn_Container;
+    animation-duration: 1s;
+    
+  }
+
+#customModal{
+    display:none;
+    top: 0;
+    background-color: white;
+    width: 99%;
+    height: 99%;
+    margin: auto;
+    position: fixed;
+    z-index: 40001;
+    border-radius: 10px;
+    margin: 10px;
+    animation-name: fadeIn_Modal;
+    animation-duration: 0.8s;
+}
+
+#customModal__closeButton{
+    cursor: pointer;
+}
+
+.customCards__addButton{
+    cursor: pointer; 
+    padding: 4px 12px; 
+    border: 1px solid gray; 
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#customModal__comprarButton{
+    cursor:pointer;
+    padding: 4px 16px; 
+    width: fit-content; 
+    float: right;
+    border: 1px solid grey; 
+    border-radius: 5px;
+    text-align: center;
+    color: grey;
+    background-color: transparent;
+}
+
+.customCards__addButton:hover,
+#customModal__comprarButton:not(:disabled):hover{
+    background-color:  gray; 
+    border-radius: 5px;
+    color: white;
+}
+
+.customCards__addButton:active,
+#customModal__comprarButton:not(:disabled):active{
+    background-color:  transparent; 
+    border-radius: 5px;
+}
+
+#customModal__comprarButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.selected__card{
+    box-shadow: 0 3px 10px 2px #c1c1c1;
+    border: 1px solid gray;
+}
+
+#icon_aliments,
+#icon_habitatge,
+#icon_transport,
+#icon_oci{
+    cursor: pointer;
+}
+
+#icon_aliments:hover,
+#icon_habitatge:hover,
+#icon_transport:hover,
+#icon_oci:hover{
+    transform: scale(1.05);
+    transform-origin: center;
+}
+
+#icon_aliments:active,
+#icon_habitatge:active,
+#icon_transport:active,
+#icon_oci:active{
+    transition: transform();
+}
+
